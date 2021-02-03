@@ -1,11 +1,11 @@
 import reverseString from '../scripts/reverseString'
 
 test('The input should be a string.', () => {
-  expect(capitalize({ hi: [234] })).toBe('The input is not a string')
+  expect(reverseString({ hi: [234] })).toBe('The input is not a string')
 })
 
 test('The input should not be empty', () => {
-  expect(capitalize('')).toBe('The input should not be empty')
+  expect(reverseString('')).toBe('The input should not be empty')
 })
 
 test('Ikraam should be maarkI', () => {
