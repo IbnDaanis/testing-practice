@@ -7,13 +7,9 @@ test('The type must be valid.', () => {
 })
 
 test('Both input numbers must be numbers.', () => {
-  expect(calculator({ type: 'ADD', num1: 1, num2: ['1'] })).toBe(
+  expect(calculator({ type: 'ADD', num1: 1, num2: [1] })).toBe(
     'Either num1, num2, or both are not valid numbers.'
   )
-})
-
-test('Test if string numbers work', () => {
-  expect(calculator({ type: 'ADD', num1: '1', num2: '1' })).toBe(2)
 })
 
 test('Testing Addition', () => {
