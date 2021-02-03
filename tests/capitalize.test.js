@@ -12,7 +12,7 @@ test('Check if the first character is a letter.', () => {
   expect(capitalize('!hello')).toBe('The first character is not a letter.')
 })
 
-test('Not letter characters should be ignored', () => {
+test('Non-letter characters should be ignored', () => {
   expect(capitalize('ik.raam')).toBe('Ik.raam')
 })
 
