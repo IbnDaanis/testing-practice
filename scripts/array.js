@@ -13,5 +13,3 @@ export default function array(arr) {
     return 'Not all items in the input are numbers.'
   }
 }
-
-console.log(array([1, '2', 3, 4, 2, 6]))

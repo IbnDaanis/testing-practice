@@ -1,4 +1,5 @@
 export default function caesarCipher(str) {
+  if (typeof str !== 'string') return 'The input is not a string.'
   const letters = str
     .toLowerCase()
     .split('')
@@ -11,8 +12,5 @@ export default function caesarCipher(str) {
       return String.fromCharCode(code)
     })
     .join('')
-  console.log(str[0])
   return letters
 }
-
-console.log(caesarCipher('AB:C'))
